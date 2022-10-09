@@ -18,7 +18,7 @@ from sklearn.metrics import confusion_matrix
 
 
 warnings.filterwarnings("ignore")
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Classification in Machine Learning")
 
 ####################### Load Data #######################
 iris = datasets.load_iris()
@@ -206,11 +206,11 @@ col = [col_A, col_B, col_C, col_D, col_E]
 with container3 :
     for i in range(5) :
         with col[i] :
-            st.write("Random Forest " + str(i))
+            st.write("Random Forest " + str(i+1))
             st.dataframe(rf_conf[i])
-            st.write("K-Nearest Neighbors " + str(i))
+            st.write("K-Nearest Neighbors " + str(i+1))
             st.dataframe(knn_conf[i])
-            st.write("Support Vector Machine " + str(i))
+            st.write("Support Vector Machine " + str(i+1))
             st.dataframe(svm_conf[i])
 
 st.markdown("************************************")

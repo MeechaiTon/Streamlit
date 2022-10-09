@@ -15,7 +15,7 @@ from sklearn import datasets
 
 warnings.filterwarnings("ignore")
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Iris Data Visualization")
 
 
 ####################### Load Data #######################
