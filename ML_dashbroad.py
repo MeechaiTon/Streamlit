@@ -172,7 +172,7 @@ conf_svm = confusion_matrix(y_test, clf_svm.predict(X_test), labels = target['ta
 st.code(conf_code, language='python')
 st.markdown("***")
 
-st.markdown("<h5 style='text-align: center;'>Machine Learning Result </h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center;'>Machine Learning Result (Running 5 rounds)</h5>", unsafe_allow_html=True)
 container2 = st.container()
 col_1, col_2, col_3 = st.columns(3)
 with container2:
@@ -212,3 +212,9 @@ with container3 :
             st.dataframe(knn_conf[i])
             st.write("Support Vector Machine " + str(i))
             st.dataframe(svm_conf[i])
+
+st.markdown("************************************")
+st.write("Made by : Meechai Homchan")
+st.write("Date : 2022-10-06")
+st.write("Markdown: Don't add Machine Learning Hyperparameter")
+st.markdown("************************************")
